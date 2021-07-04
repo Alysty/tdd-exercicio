@@ -36,4 +36,18 @@ test('Deve retornar o salario liquido de um DBA com um é salario menor que 2000
     const emp = new Funcionarios("name", "email", 1000, "DBA")
     expect(calculadora(emp)).toBe(850)
 })
+test('Deve retornar o salario liquido de um TESTADOR com um é salario maior que 2000',()=>{
+    const emp = new Funcionarios("name", "email", 4000, "TESTADOR")
+    expect(calculadora(emp)).toBe(3000)
+})
+
+test('Deve retornar o salario liquido de um TESTADOR com um é salario igual a 2000',()=>{
+    const emp = new Funcionarios("name", "email", 2000, "TESTADOR")
+    expect(calculadora(emp)).toBe(1500)
+})
+
+test('Deve retornar o salario liquido de um TESTADOR com um é salario menor que 2000',()=>{
+    const emp = new Funcionarios("name", "email", 1000, "TESTADOR")
+    expect(calculadora(emp)).toBe(850)
+})
 
