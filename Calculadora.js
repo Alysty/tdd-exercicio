@@ -19,6 +19,13 @@ export function calculadora(emp){
             }
             break;
     }
+    if (emp.role == "GERENTE"){
+        if(emp.salary >= 5000 ){
+            return emp.salary * 0.70
+        }else{
+            return emp.salary * 0.80
+        }
+    }
 
 
 }
