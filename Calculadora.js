@@ -6,5 +6,8 @@ export function calculadora(emp){
         if(emp.salary >= 3000 ){
             return emp.salary * 0.80
         }
+        if(emp.salary < 3000){
+            return emp.salary * 0.90
+        }
     }
 }
