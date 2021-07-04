@@ -10,14 +10,8 @@ export function calculadora(emp){
                 return emp.salary * 0.90
             }
             break;
-        case "DBA":
-            if(emp.salary >= 2000 ){
-                return emp.salary * 0.75
-            }else{
-                return emp.salary * 0.85
-            }
-            break;
         case "TESTADOR":
+        case "DBA":
             if(emp.salary >= 2000 ){
                 return emp.salary * 0.75
             }else{
