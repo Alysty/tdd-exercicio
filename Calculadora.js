@@ -18,14 +18,11 @@ export function calculadora(emp){
                 return emp.salary * 0.85
             }
             break;
+        case "GERENTE":
+            if(emp.salary >= 5000 ){
+                return emp.salary * 0.70
+            }else{
+                return emp.salary * 0.80
+            }
     }
-    if (emp.role == "GERENTE"){
-        if(emp.salary >= 5000 ){
-            return emp.salary * 0.70
-        }else{
-            return emp.salary * 0.80
-        }
-    }
-
-
 }
