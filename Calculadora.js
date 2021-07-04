@@ -9,4 +9,11 @@ export function calculadora(emp){
             return emp.salary * 0.90
         }
     }
+    if(emp.role == "DBA"){
+        if(emp.salary >= 2000 ){
+            return emp.salary * 0.75
+        }else{
+            return emp.salary * 0.85
+        }
+    }
 }
